@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="body_background" id="body_1" >
+
+	<center>
+
+	<h2 class="btn-success">MINECRAFT</h2>
+ 
+	<div id="head_info" class="btn-danger">
+		<button class="btn-success instruction" data-toggle="modal" data-target="#first">Instructions</button>
+		<h3  id="current_width">Current Width  = 30 </h3>
+		<h3 id="current_height">Current Height  = 30 </h3>
+	</div>
+
+	<button onclick="update()">Change Background</button>
+<canvas id="myCanvas" width="800" height="450"></canvas>
+
+
+	</center>
+
+	<div class="modal fade" id="first">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h1 class="modal-title">Gerneral Instructions</h1>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					
+					<h5 class="btn-danger">Prees following button to get the block</h5>
+					<i><button class='btn-success'>t</button>&nbsp;Trunk Block</i>&nbsp;<img src="trunk.jpg" width="30" height="30"><br><br>
+					<i><button class='btn-success'>d</button>&nbsp;Dark Green Block</i>&nbsp;<img src="dark_green.png" width="30" height="30"><br><br>
+					<i><button class='btn-success'>l</button>&nbsp;Light Green Block</i>&nbsp;<img src="light_green.png" width="30" height="30"><br><br>
+					<i><button class='btn-success'>g</button>&nbsp;Ground Block</i>&nbsp;<img src="ground.png" width="30" height="30"><br><br>
+					<i><button class='btn-success'>w</button>&nbsp;Wall Block</i>&nbsp;<img src="wall.jpg" width="30" height="30"><br><br>
+					<i><button class='btn-success'>y</button>&nbsp;Yellow Color Wall Block</i>&nbsp;<img src="yellow_wall.png" width="30" height="30"><br><br>
+					<i><button class='btn-success'>u</button>&nbsp; Unique Block</i>&nbsp;<img src="unique.png" width="30" height="30"><br><br>
+					<i><button class='btn-success'>r</button>&nbsp;Roof Block</i>&nbsp;<img src="roof.jpg" width="30" height="30"><br><br>
+					<i><button class='btn-success'>c</button>&nbsp; Cloud Block</i>&nbsp;<img src="cloud.jpg" width="30" height="30"><br><br>
+					<i><button class='btn-success'>Shift + p</button>&nbsp;Increase Size of Block</i>&nbsp;<img src="increase.png" width="30" height="30"><br><br>
+					<i><button class='btn-success'>Shift + m</button>&nbsp;Decrease Size of Block</i>&nbsp;<img src="decrease.png" width="30" height="30"><br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
